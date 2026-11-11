@@ -1,0 +1,18 @@
+{
+  "name": "@skidz/verify-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Skidz Verify — relais public Render : page de contrôle, collecte navigateur et transfert signé vers le backend",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}

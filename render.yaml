@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: skidz-verify
+    runtime: node
+    rootDir: .
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: BACKEND_URL
+        sync: false
+      - key: RELAY_SECRET
+        sync: false
+      - key: TRUST_PROXY_HOPS
+        value: "1"
+      - key: STUN_SERVER
+        sync: false
